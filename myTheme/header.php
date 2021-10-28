@@ -12,9 +12,15 @@
 
 <header>
   <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid justify-content-center">
-      <img style="width: 50px;" src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="" srcset="https://cryptologos.cc/logos/ethereum-eth-logo.png">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <div class="container-fluid justify-content-center header-titles">
+      <a class="navbar-brand" href="<?php home_url( '/' );?>">
+        <?php
+          if (function_exists('the_custom_logo')) {
+            the_custom_logo();
+          }
+        ?>
+        <span><?php echo get_bloginfo( 'name' ); ?></span>
+      </a>
     </div>  
   </nav>  
 </header>
