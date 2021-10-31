@@ -3,6 +3,15 @@ Theme Name: myTheme
 Text Domain: myTheme
 */
 
+.title-in-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: black;
+}
+
 .footer {
   background-color: #212529;
   color: white;
